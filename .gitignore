@@ -1,4 +1,6 @@
 /node_modules
+/public/build/
+/public/mix*
 /public/storage
 /public/hot
 /storage/*.key
