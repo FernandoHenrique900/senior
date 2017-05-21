@@ -13,11 +13,12 @@ class CriandoBanner extends Migration
      */
     public function up()
     {
-        Schema::create('banner', function (Blueprint $table) {
+        Schema::create('banners', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titulo',30);
-            $table->text('textos');
+            $table->text('texto');
             $table->string('link',150);
+            $table->string('target',10);
         });
     }
 
@@ -28,6 +29,6 @@ class CriandoBanner extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('banner');
+        Schema::dropIfExists('banners');
     }
 }

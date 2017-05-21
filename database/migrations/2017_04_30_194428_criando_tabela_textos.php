@@ -16,7 +16,7 @@ class CriandoTabelaTextos extends Migration
         Schema::create('textos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('titulo',50);
-            $table->text('textos');
+            $table->text('texto');
         });
     }
 

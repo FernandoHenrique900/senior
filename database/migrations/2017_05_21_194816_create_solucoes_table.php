@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CriandoTabelaContato extends Migration
+class CreateSolucoesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CriandoTabelaContato extends Migration
      */
     public function up()
     {
-        Schema::create('contatos', function (Blueprint $table) {
+        Schema::create('solucoes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('endereco_1',100);
-            $table->string('endereco_2',100);
-            $table->string('telefone',20);
-            $table->string('email',100);
+            $table->string('titulo',30);
+            $table->text('texto');
+            $table->string('link',150)->nullable();
+            $table->string('target',10)->nullable();
+            $table->timestamps();
         });
     }
 
@@ -29,6 +30,6 @@ class CriandoTabelaContato extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contatos');
+        Schema::dropIfExists('solucoes');
     }
 }

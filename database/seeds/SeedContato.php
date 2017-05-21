@@ -11,8 +11,10 @@ class SeedContato extends Seeder
      */
     public function run()
     {
-        DB::table('contato')->insert(array(
-            [ 'telefone' => "+55 11 4331-1761","email"=>"contato@seniorassessoria.com.br"]
-        ));
+        DB::table('contatos')->insert([
+            ["endereco_1" => "Avenida Paulo Afonso, 460 Sala 02",
+                "endereco_2" => "Centro – São Bernardo do Campo/SP CEP 09770-350",
+                'telefone' => "+55 11 4331-1761", "email" => "contato@seniorassessoria.com.br"]
+        ]);
     }
 }
