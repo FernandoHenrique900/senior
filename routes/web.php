@@ -12,7 +12,7 @@
 */
 
 Route::get('/', "HomeController@homepage")->name('home');
-Route::get('/escritorio', "HomeController@homepage")->name('escritorio');
+Route::get('/escritorio', "EscritorioController")->name('escritorio');
 Route::get('/equipe', "HomeController@homepage")->name('equipe');
 Route::get('/solucoes', "HomeController@homepage")->name('solucoes');
 Route::get('/contato', "ContatoController@pagina")->name('contato');

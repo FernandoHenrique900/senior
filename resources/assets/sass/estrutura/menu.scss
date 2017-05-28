@@ -61,7 +61,7 @@
   text-decoration: none;
 }
 
-.lnk-menu:hover {
+.lnk-menu:hover, .page-home .lnk-home, .page-escritorio .lnk-escritorio, .page-equipe .lnk-equipe, .page-solucoes .lnk-solucoes, .page-contato .lnk-contato {
   @extend .btn-vermelho;
 }
 

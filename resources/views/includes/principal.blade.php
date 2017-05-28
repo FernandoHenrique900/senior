@@ -5,7 +5,7 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:title" content="Senior Assessoria Jurídica">
-    <title>Senior Assessoria Jurídica</title>
+    <title>Senior Assessoria Jurídica @yield('titulo-pg')</title>
     <base href="{{ asset('/') }}"/>
     <link rel="icon" href="imagens/favicon.ico"/>
 <!-- inline ../../../public/build/css/inline.css

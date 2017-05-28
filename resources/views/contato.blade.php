@@ -1,6 +1,7 @@
 @extends('includes.principal')
 
-@section('classe-pg', 'page-fale-conosco')
+@section('titulo-pg', " - Contato")
+@section('classe-pg', 'page-contato')
 @section('conteudo')
     <div class="container contato-container">
         <h1 class="titulos-losango col-md-3">Contato</h1>
