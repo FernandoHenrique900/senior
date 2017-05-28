@@ -1,0 +1,55 @@
+.banner {
+  overflow: hidden;
+  margin-top: -370px;
+}
+
+.banner .conteudo-textos, .banner .titulos-losango {
+  transition: 0.5s;
+}
+
+.banner .titulos-losango {
+  transform: translateX(-100%);
+}
+
+.banner .conteudo-textos {
+  transform: translateX(100%);
+}
+
+.banner-ativo .conteudo-textos, .banner-ativo .titulos-losango {
+  transform: translateX(0);
+}
+
+.container-banner .banner:first-child {
+  margin: 0;
+}
+
+.banner .btn {
+  margin-top: 20px;
+}
+
+.banner .conteudo-textos {
+  margin-top: 120px;
+}
+
+.banner[data-banner='2'] .conteudo-textos {
+  margin-top: 40px;
+}
+
+.controle-banner {
+  width: 15px;
+  transition: 0.15s;
+  height: 15px;
+  background: #562222;
+  display: inline-block;
+  border-radius: 15px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.controle-banner-ativo, .controle-banner:hover {
+  background: #B63535;
+}
+
+#container-controle-banner {
+  margin-bottom: 40px;
+}

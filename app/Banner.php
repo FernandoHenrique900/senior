@@ -13,7 +13,7 @@ class Banner extends Model
             $banners[$i] = $banners_db[$i];
         $banners[2] = new Banner();
         $banners[2]->titulo = "Soluções";
-        $banners[2]->texto = $banners_db[2]->texto.$banners_db[3]->texto;
+        $banners[2]->texto = $banners_db[2]->texto."<div class=\"barra-divisora bg-black\"></div>".$banners_db[3]->texto;
         return $banners;
     }
 
@@ -25,7 +25,7 @@ class Banner extends Model
     public function montaBtnSaibaMais()
     {
         if($this->link!=null && $this->target!=null)
-           return "<a href='$this->link' target='$this->target'>Saiba Mais</a>";
+           return "<div class='text-right'><a href='$this->link' class='btn' target='$this->target'>Saiba Mais</a></div>";
         else
             return "";
     }

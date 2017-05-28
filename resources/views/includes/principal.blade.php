@@ -15,7 +15,7 @@
 <header id="topo-principal">
     <div class="container central">
         <div class="col-md-3">
-            <a id="logo" href="home"><img class="img-responsive" src="img/logo.png" alt=""/></a>
+            <a id="logo" href="{{route('home')}}"><img class="img-responsive" src="img/logo.png" alt=""/></a>
         </div>
         <button id="btn-menu-rpsv" class="hamburger hamburger--collapse" type="button">
           <span class="hamburger-box">
