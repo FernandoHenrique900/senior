@@ -39,6 +39,5 @@
                 CEP: {{$contato->cep}}</p>
         </div>
     </div>
-    <div class="barra-divisora bg-black"></div>
     <div class="maps-container embed-responsive">{!!$contato->maps!!}</div>
 @stop
