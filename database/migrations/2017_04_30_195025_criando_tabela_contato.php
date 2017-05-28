@@ -15,10 +15,13 @@ class CriandoTabelaContato extends Migration
     {
         Schema::create('contatos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('endereco_1',100);
-            $table->string('endereco_2',100);
             $table->string('telefone',20);
             $table->string('email',100);
+            $table->string('endereco_1',100);
+            $table->string('endereco_2',100);
+            $table->string('facebook',150);
+            $table->string('cep',10);
+            $table->text('maps');
         });
     }
 

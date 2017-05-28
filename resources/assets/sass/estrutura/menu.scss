@@ -1,5 +1,5 @@
 .seta-menu {
-  width: 50px;
+  width: 170px;
   float: left;
   height: 14px;
   background: black;
@@ -27,7 +27,6 @@
 }
 
 #menu-principal {
-  text-align: right;
   float: right;
 }
 
@@ -48,18 +47,12 @@
   background: url(../../img/menu-logango.png) #813434;
   background-size: contain;
   color: white;
-  padding: 48px 9px 0;
-  font-weight: bold;
+  padding-top: 56px;
   margin: 0 1px;
   text-align: center;
-  border: 0;
   font-size: 15px;
-  -webkit-transition: 0.15s;
+  font-weight: bold;
   transition: 0.15s;
-}
-
-.lnk-home, .lnk-quem-somos, .lnk-fale-conosco {
-  padding-top: 56px;
 }
 
 .btn-vermelho {

@@ -1,0 +1,68 @@
+.contato-info, .container-losangos {
+  margin-top: 100px;
+}
+
+.contato-info {
+  font-size: 19px;
+}
+
+.contato-info p {
+  padding-left: 35px;
+  padding-bottom: 10px;
+}
+
+.contato-info span {
+  margin-left: -28px;
+  margin-right: 10px;
+  color: #813434;
+}
+
+.form-contato {
+  color: #B63535;
+  margin-bottom: 45px;
+}
+
+label {
+  color: #B63535;
+  font-weight: normal;
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+.form-control {
+  background: #813434;
+  border: none;
+  border-radius: 0;
+  color: white;
+}
+
+.btn {
+  background: #B63535;
+  color: white;
+  border-radius: 0;
+  border: none;
+  width: 150px;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  background: #813434;
+  color: white;
+}
+
+#mensagem-ipt {
+  height: 80px;
+}
+
+.barra-divisora {
+  height: 10px;
+  margin: 40px 0;
+}
+
+.maps-container {
+  padding-bottom: 30%;
+}
+
+.icon-facebook-official {
+  font-size: 20px;
+}

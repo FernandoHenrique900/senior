@@ -1,15 +1,27 @@
-body{
-  font:21px/1.2 'Roboto', sans-serif;
-  color:#1A1A1A;
+body {
+  font: 21px/1.2 'Roboto', sans-serif;
+  color: #1A1A1A;
 }
+
 .titulo {
   font: italic bold 40px 'Roboto', sans-serif;
   color: #FFFFFF;
 }
-.bg-black{
+
+.bg-black {
   color: #FFFFFF;
   background: #1A1A1A;
 }
-.central{
-  width:1200px;
+
+.central {
+  width: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: #B63535;
+}
+
+a:hover {
+  color: #B63535;
 }

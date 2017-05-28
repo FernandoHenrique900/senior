@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:title" content="Senior Assessoria Jurídica">
     <title>Senior Assessoria Jurídica</title>
@@ -26,15 +26,10 @@
             <div class="seta-menu"></div>
             <ul>
                 <li><a class="lnk-menu lnk-home" href="{{route('home')}}">Home</a></li>
-                <li><a class="lnk-menu lnk-quem-somos" href="{{route('quemSomos')}}">Quem Somos</a></li>
-                <li><a class="lnk-menu lnk-direito-empresarial" href="{{route('direitoEmpresarial')}}">Direito
-                        Empresarial</a>
-                </li>
-                <li><a class="lnk-menu lnk-solucoes-tributarias" href="{{route('solucoesTributarias')}}">Soluções
-                        Tributarias</a></li>
-                <li><a class="lnk-menu lnk-recuperacao-judicial" href="{{route('recuperacaoJudicial')}}">Recuperação
-                        Judicial</a></li>
-                <li><a class="lnk-menu lnk-fale-conosco" href="{{route('faleConosco')}}">Fale Conosco</a></li>
+                <li><a class="lnk-menu lnk-escritorio" href="{{route('escritorio')}}">Escritório</a></li>
+                <li><a class="lnk-menu lnk-equipe" href="{{route('equipe')}}">Equipe</a></li>
+                <li><a class="lnk-menu lnk-solucoes" href="{{route('solucoes')}}">Soluções</a></li>
+                <li><a class="lnk-menu lnk-contato" href="{{route('contato')}}">Contato</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
