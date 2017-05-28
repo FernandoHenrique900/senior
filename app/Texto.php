@@ -20,8 +20,8 @@ class Texto extends Model
         foreach ($textos as $texto)
         {
             if($i>0)
-                $html .= "<div class=\"barra-divisora bg-black\"></div>";
-            $html .="<h2 data-text='$texto->id' class='titulos-vermelhos'>$texto->titulo</h2><div class='text-content'>$texto->texto</div>";
+                $html .= "<div class=\"barra-divisora bg-black\"></div><h2 data-text='$texto->id' class='titulos-vermelhos'>$texto->titulo</h2>";
+            $html .="<div class='text-content'>$texto->texto</div>";
             $i++;
         }
         return $html;

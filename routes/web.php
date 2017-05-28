@@ -13,7 +13,7 @@
 
 Route::get('/', "HomeController@homepage")->name('home');
 Route::get('/escritorio', "EscritorioController")->name('escritorio');
-Route::get('/equipe', "HomeController@homepage")->name('equipe');
-Route::get('/solucoes', "HomeController@homepage")->name('solucoes');
+Route::get('/equipe', "EquipeController")->name('equipe');
+Route::get('/solucoes', "SolucoesController")->name('solucoes');
 Route::get('/contato', "ContatoController@pagina")->name('contato');
 Route::post('/contato', "ContatoController@enviarEmail")->name('emailContato');
