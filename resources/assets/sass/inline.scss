@@ -1,8 +1,15 @@
 body{
-  font:20px/1.2 'Roboto', sans-serif;
+  font:21px/1.2 'Roboto', sans-serif;
   color:#1A1A1A;
 }
-.titulo{
-  font:italic 40px 'Roboto', sans-serif;
-  color:#FFFFFF;
+.titulo {
+  font: italic bold 40px 'Roboto', sans-serif;
+  color: #FFFFFF;
+}
+.bg-black{
+  color: #FFFFFF;
+  background: #1A1A1A;
+}
+.central{
+  width:1200px;
 }

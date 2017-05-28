@@ -1,10 +1,79 @@
-.lnk-menu {
-  width: 172px;
-  height: 172px;
+.seta-menu {
+  width: 50px;
+  float: left;
+  height: 14px;
+  background: black;
+  margin-top: 58px;
+}
+
+.seta-menu::after, .seta-menu::before {
+  content: '';
+  display: block;
+  height: 13px;
+  width: 10px;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid black;
+}
+
+.seta-menu::before {
+  margin-left: -10px;
+  float: left;
+}
+
+.seta-menu::after {
+  float: right;
+  border-right: 7px solid white;
+}
+
+#menu-principal {
+  text-align: right;
+  float: right;
+}
+
+#menu-principal ul {
+  list-style: none;
+  margin: 0;
+}
+
+#menu-principal li {
   display: inline-block;
-  background: #B63535;
+  float: left;
+}
+
+.lnk-menu {
+  width: 130px;
+  height: 130px;
+  display: block;
+  background: url(../../img/menu-logango.png) #813434;
+  background-size: contain;
   color: white;
+  padding: 48px 9px 0;
+  font-weight: bold;
+  margin: 0 1px;
   text-align: center;
-  transform: rotate(45deg);
-  border: 11px solid white;
+  border: 0;
+  font-size: 15px;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.lnk-home, .lnk-quem-somos, .lnk-fale-conosco {
+  padding-top: 56px;
+}
+
+.btn-vermelho {
+  background-color: #B63535;
+  color: white;
+  text-decoration: none;
+}
+
+.lnk-menu:hover {
+  @extend .btn-vermelho;
+}
+
+@media (min-width: 411px) {
+  #btn-menu-rpsv {
+    display: none;
+  }
 }

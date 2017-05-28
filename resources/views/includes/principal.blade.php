@@ -8,29 +8,33 @@
     <title>Senior Assessoria Jurídica</title>
     <base href="{{ asset('/') }}"/>
     <link rel="icon" href="imagens/favicon.ico"/>
-    <!-- inline ../../../public/build/css/inline.css -->
-    <link href='{{mix('/build/css/inline.css')}}' rel='stylesheet' inline type='text/css'>
+<!-- inline ../../../public/build/css/inline.css
+    <link href='{{mix('/build/css/inline.css')}}' rel='stylesheet' inline type='text/css'>-->
 </head>
 <body class="@yield('classe-pg')">
-<header id="topo-principal" class="bg-black">
-    <div class="central">
-        <a id="logo" href="home"></a>
+<header id="topo-principal">
+    <div class="container central">
+        <div class="col-md-3">
+            <a id="logo" href="home"><img class="img-responsive" src="img/logo.png" alt=""/></a>
+        </div>
         <button id="btn-menu-rpsv" class="hamburger hamburger--collapse" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        <nav id="menu-principal">
+        <nav id="menu-principal" class="col-md-9">
+            <div class="seta-menu"></div>
             <ul>
-                <li><a class="lnk-menu lnk-home" href="#home">Home</a></li>
-                <li><a class="lnk-menu lnk-quem-somos" href="#quem-somos">Quem<br/>Somos</a></li>
-                <li><a class="lnk-menu lnk-direito-empresarial" href="#direito-empresarial">Direito<br/>Empresarial</a>
+                <li><a class="lnk-menu lnk-home" href="{{route('home')}}">Home</a></li>
+                <li><a class="lnk-menu lnk-quem-somos" href="{{route('quemSomos')}}">Quem Somos</a></li>
+                <li><a class="lnk-menu lnk-direito-empresarial" href="{{route('direitoEmpresarial')}}">Direito
+                        Empresarial</a>
                 </li>
-                <li><a class="lnk-menu lnk-solucoes-tributarias"
-                       href="#solucoes-tributarias">Soluções<br/>Tributarias</a></li>
-                <li><a class="lnk-menu lnk-recuperacao-judicial"
-                       href="#recuperacao-judicial">Recuperação<br/>Judicial</a></li>
-                <li><a class="lnk-menu lnk-fale-conosco" href="#fale-conosco">Fale<br/>Conosco</a></li>
+                <li><a class="lnk-menu lnk-solucoes-tributarias" href="{{route('solucoesTributarias')}}">Soluções
+                        Tributarias</a></li>
+                <li><a class="lnk-menu lnk-recuperacao-judicial" href="{{route('recuperacaoJudicial')}}">Recuperação
+                        Judicial</a></li>
+                <li><a class="lnk-menu lnk-fale-conosco" href="{{route('faleConosco')}}">Fale Conosco</a></li>
             </ul>
         </nav>
         <div class="clearfix"></div>
@@ -38,13 +42,14 @@
 </header>
 @yield('conteudo')
 <footer id="rodape" class="bg-black">
-    <span class="contact-info"></span>
-    <span class="copyrigth">Senior Assessoria Juridica - Copyright 2017. Todos os direitos reservados.</span>
+    <span class="contact-info">{{$contato->telefone}}&nbsp;&nbsp;&nbsp;{{$contato->email}}</span>
+    <span class="copyright">Senior Assessoria Juridica - Copyright 2017. Todos os direitos reservados.</span>
 </footer>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="{{mix('/build/css/all.css')}}" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href='{{mix('/build/css/inline.css')}}' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 @yield('css')
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

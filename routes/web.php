@@ -11,4 +11,9 @@
 |
 */
 
-Route::get('/', "HomeController@homepage");
+Route::get('/', "HomeController@homepage")->name('home');
+Route::get('/quem-somos', "HomeController@homepage")->name('quemSomos');
+Route::get('/direito-empresarial', "HomeController@homepage")->name('direitoEmpresarial');
+Route::get('/solucoes-tributarias', "HomeController@homepage")->name('solucoesTributarias');
+Route::get('/recuperacao-judicial', "HomeController@homepage")->name('recuperacaoJudicial');
+Route::get('/fale-conosco', "HomeController@homepage")->name('faleConosco');
