@@ -1,6 +1,10 @@
 .banner {
   overflow: hidden;
-  margin-top: -370px;
+  height: 0;
+}
+
+.banner-ativo{
+  height: auto;
 }
 
 .banner .conteudo-textos, .banner .titulos-losango {
@@ -55,17 +59,16 @@
 }
 
 @media (max-width: 990px) {
-
-  .banner {
-    margin-top: -510px;
-  }
   .banner[data-banner='2'] .conteudo-textos {
     margin-top: 0px;
   }
+  /*.banner {
+    margin-top: -510px;
+  }
+
   .banner[data-banner='2'] {
     margin-top: -487px;
-  }
-  /*.titulos-losango {
+  }.titulos-losango {
     padding: 15.5% 0 0;
     background-size: contain;
     width: 25%;
