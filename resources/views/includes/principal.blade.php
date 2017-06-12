@@ -2,27 +2,22 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta property="og:title" content="Senior Assessoria Jurídica">
     <title>Senior Assessoria Jurídica @yield('titulo-pg')</title>
     <base href="{{ asset('/') }}"/>
     <link rel="icon" href="imagens/favicon.ico"/>
-<!-- inline ../../../public/build/css/inline.css
-    <link href='{{mix('/build/css/inline.css')}}' rel='stylesheet' inline type='text/css'>-->
+    <!-- inline ../../../public/build/css/inline.css
+        <link href='/build/css/inline.css' rel='stylesheet' inline type='text/css'>-->
 </head>
 <body class="@yield('classe-pg')">
 <header id="topo-principal">
     <div class="container central">
-        <div class="col-md-3">
-            <a id="logo" href="{{route('home')}}"><img class="img-responsive" src="img/logo.png" alt=""/></a>
-        </div>
-        <button id="btn-menu-rpsv" class="hamburger hamburger--collapse" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-        <nav id="menu-principal" class="col-md-9">
+        <a id="logo" class="col-xs-4 col-md-3" href="{{route('home')}}"><img class="img-responsive" src="img/logo.png"
+                                                                             alt=""/></a>
+        <button id="btn-menu-rpsv" type="button">menu</button>
+        <nav id="menu-principal" class="col-xs-8 col-md-9">
             <div class="seta-menu"></div>
             <ul>
                 <li><a class="lnk-menu lnk-home" href="{{route('home')}}">Home</a></li>
@@ -42,12 +37,13 @@
 </footer>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="{{mix('/build/css/all.css')}}" type="text/css">
-<link href='{{mix('/build/css/inline.css')}}' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="build/css/all.css" type="text/css">
+<link href='build/css/inline.css' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 @yield('css')
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 @yield('javascript')
+<script src="build/js/menu.js"></script>
 </body>
 </html>

@@ -28,3 +28,34 @@
   content: "• ";
   color: #FF0000;
 }
+
+@media(max-width: 990px) {
+
+  .titulos-losango {
+    background: url(../../img/s_losangulos-titulos-cel.svg);
+    width: 222px;
+    margin: 0 auto -8px;
+    padding: 100px 0 0;
+    height: 257px;
+    float: none;
+    position: relative;
+    z-index: 2;
+  }
+
+  .conteudo-textos::before {
+    content: '';
+    display: block;
+    background: url(../../img/seta-branca.png) center 0 #B63535 no-repeat;
+    height: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .conteudo-textos {
+    padding: 0 5%;
+  }
+
+  .conteudo-textos .barra-divisora {
+    margin-right: 0;
+  }
+}

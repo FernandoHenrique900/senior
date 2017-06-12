@@ -1,5 +1,5 @@
 .seta-menu {
-  width: 170px;
+  width: 160px;
   float: left;
   height: 14px;
   background: black;
@@ -65,8 +65,137 @@
   @extend .btn-vermelho;
 }
 
-@media (min-width: 411px) {
+@media (max-width: 1200px) {
+  .seta-menu {
+    width: 110px;
+    margin-top: 43px;
+  }
+
+  .lnk-menu {
+    width: 100px;
+    height: 100px;
+    padding-top: 41px;
+  }
+}
+
+@media (max-width: 990px) {
+  .seta-menu {
+    width: 40px;
+    margin-top: 33px;
+  }
+
+  #menu-principal {
+    margin-top: 20px;
+  }
+
+  .lnk-menu {
+    width: 80px;
+    height: 80px;
+    padding-top: 31px;
+  }
+}
+
+@media (max-width: 770px) {
+  #logo {
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+  }
+
+  .seta-menu {
+    display: none;
+  }
+
+  #menu-principal {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  #menu-principal li {
+    float: none;
+  }
+
+  #menu-principal ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 481px) {
   #btn-menu-rpsv {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #menu-principal {
+    clear: both;
+    padding-top: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: 1s;
+  }
+
+  #menu-principal.ativo-menu {
+    height: 270px;
+    padding-top: 35px;
+  }
+
+  #btn-menu-rpsv {
+    border: 0;
+    background: url(../../img/s_menu-btn.svg);
+    height: 100px;
+    width: 87px;
+    display: block;
+    font: 21px/1.2 'Roboto', sans-serif;
+    float: right;
+    color: white;
+    padding-bottom: 17px;
+  }
+
+  #logo {
+    float: left;
+    width: 50%;
+    padding: 0;
+  }
+
+  #menu-principal ul {
+    flex-direction: column;
+    width: 100%;
+    background: #440404;
+    padding: 15px 40px;
+  }
+
+  .lnk-menu {
+    float: none;
+    display: inline-block;
+    background: #813434;
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin: 4px 0;
+    padding: 5px;
+  }
+
+  .lnk-menu::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 29px;
+    top: 0;
+    width: 29px;
+    background: url(../../img/s_losango-simples.svg);
+    left: -15px;
+  }
+
+  #menu-principal::before {
+    content: '';
+    display: block;
+    background: url(../../img/seta-branca.png) center 0 #B63535 no-repeat;
+    height: 30px;
+    width: 100%;
   }
 }

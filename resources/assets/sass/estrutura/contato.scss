@@ -61,3 +61,37 @@ label {
 .icon-facebook-official {
   font-size: 20px;
 }
+
+@media(max-width: 1200px) {
+  .contato-info {
+    font-size: 16px;
+  }
+
+  .contato-container .conteudo-textos {
+    width: 70%;
+    padding: 0;
+  }
+}
+
+@media(max-width: 990px) {
+  .contato-container .conteudo-textos {
+    width: 100%;
+  }
+
+  .contato-container .conteudo-textos::before {
+    margin-bottom: 10px;
+  }
+
+  .container-losangos {
+    margin: 0 0 30px;
+    padding: 0;
+  }
+
+  .contato-info {
+    text-align: center;
+    padding: 30px 0 10px;
+    margin: 0;
+    border-top: 10px solid #B63535;
+    border-bottom: 10px solid #B63535;
+  }
+}

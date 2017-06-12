@@ -19,7 +19,8 @@ var public_path_js = public_path+'js/';
 mix.sass(resource_path_sass+'all.scss', public_path_sass)
     .sass(resource_path_sass+'inline.scss', public_path_sass)
     .scripts(resource_path_js+'banner.js', public_path_js+"banner.js")
+    .scripts(resource_path_js+'menu.js', public_path_js+"menu.js")
     .options({
         processCssUrls: false
     })
-    .version();
+    ;//.version();

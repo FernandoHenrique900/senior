@@ -2,7 +2,7 @@
 
 @section('classe-pg', 'page-home')
 @section('javascript')
-    <script src="{{mix("build/js/banner.js")}}"></script>
+    <script src="build/js/banner.js"></script>
 @stop
 @section('conteudo')
     <article class="container">
