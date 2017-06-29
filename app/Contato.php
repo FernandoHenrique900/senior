@@ -3,17 +3,22 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 
 class Contato extends Model
 {
     public static function dadosRodape()
     {
-        return self::first(['telefone','email']);
+        return Cache::remember("senior:contato:rodape",10,function(){
+            self::first(['telefone','email']);
+        });
     }
 
     public static function dadosFaleConosco()
     {
-        return self::first(['endereco_1','endereco_2','telefone','email','facebook','maps','cep']);
+        return Cache::remember('senior:contato:fales-conosco',10,function(){
+            self::first(['endereco_1','endereco_2','telefone','email','facebook','maps','cep']);
+        });
     }
 
     public function facebookBtn()
